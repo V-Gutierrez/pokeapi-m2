@@ -7,3 +7,16 @@ Ferramentas utilizadas até o momento:
 - TypeScript
 - Axios
 - PokéAPI
+- Styled-Components
+
+
+Primeiro deploy: http://pokedex-alphav1.surge.sh/
+
+
+
+
+Futuras implementações: 
+
+- Buscas
+- Página de cada Pokémon
+- Melhoras na UI
