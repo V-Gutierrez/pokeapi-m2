@@ -4,5 +4,6 @@ Projeto em andamento, nesta fase inicial já consigo utilizar os dados da API e 
 
 Ferramentas utilizadas até o momento:
 
+- TypeScript
 - Axios
 - PokéAPI
