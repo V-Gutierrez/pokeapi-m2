@@ -5,6 +5,8 @@ export const List = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, 400px);
     text-align: center;
+    justify-content: space-evenly;
+
     gap: 20px;
     padding: 10px;
     height: auto;
