@@ -5,7 +5,7 @@ export const List = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, 400px);
     text-align: center;
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
     height: auto;
 `;
