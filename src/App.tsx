@@ -1,12 +1,13 @@
 import React from 'react';
 import GlobalStyle from './Global/global_styles';
 import PokeList from './Components/PokeList/PokeList';
+import Header from './Components/Header/Header';
 
 function App() {
     return (
         <>
             <GlobalStyle />
-            <h1>PokeDex</h1>
+            <Header />
             <PokeList />
         </>
     );

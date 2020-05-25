@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import api from '../../Services/api';
 import styled from 'styled-components';
 import PokeFrame from './../PokeFrame/PokeFrame';
-import List from './PokeList_styles';
+import { List, BtnWrapper } from './PokeList_styles';
 
 function PokeList(props: any): any {
     const [pokemonList, setPokemonList] = useState<any>([]);
@@ -15,11 +15,11 @@ function PokeList(props: any): any {
     `;
 
     const NextButton = styled.button`
-        display: ${pages === 940 ? 'none' : 'block'};
+        display: ${pages === 780 ? 'none' : 'block'};
     `;
 
     const handleNextPage = () => {
-        if (pages === 940) {
+        if (pages === 780) {
             return;
         } else {
             console.log(pages);
@@ -44,6 +44,10 @@ function PokeList(props: any): any {
         });
     }, [pages]);
 
+    const setNewPage = (e: any) => {
+        setPages(e.target.value * 20);
+    };
+
     return (
         <>
             <List>
@@ -55,8 +59,21 @@ function PokeList(props: any): any {
                     </>
                 ))}
             </List>
-            <PrevButton onClick={handlePrevPage}>Previous Page</PrevButton>
-            <NextButton onClick={handleNextPage}>Next Page</NextButton>
+            <BtnWrapper>
+                <PrevButton onClick={handlePrevPage}>Anterior</PrevButton>
+                <p>
+                    Página atual: {pages / 20}/{780 / 20} <br />
+                    Go to:{' '}
+                    <input
+                        onChange={setNewPage}
+                        value={pages / 20}
+                        type="number"
+                        max={39}
+                        min={0}
+                    />
+                </p>
+                <NextButton onClick={handleNextPage}>Próxima</NextButton>
+            </BtnWrapper>
         </>
     );
 }
