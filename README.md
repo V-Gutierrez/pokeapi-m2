@@ -1,7 +1,9 @@
 ### pokeapi-m2
 
-Projeto em andamento, nesta fase inicial já consigo utilizar os dados da API e realizar a paginação.
--v2: Agora é possível realizar buscas e os assets foram aprimorados
+- Projeto em andamento, nesta fase inicial já consigo utilizar os dados da API e realizar a paginação.
+
+### v2
+- Agora é possível realizar buscas e os assets foram aprimorados
 
 
 
