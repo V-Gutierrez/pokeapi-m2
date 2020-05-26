@@ -19,4 +19,4 @@ Futuras implementações:
 
 - Buscas
 - Página de cada Pokémon
-- Melhoras na UI e Responsividade
+- Melhoras na UI 
