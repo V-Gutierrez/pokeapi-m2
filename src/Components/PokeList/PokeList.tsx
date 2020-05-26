@@ -15,14 +15,15 @@ function PokeList(props: any): any {
     `;
 
     const NextButton = styled.button`
-        display: ${pages === 780 ? 'none' : 'block'};
+        display: ${pages === 787 ? 'none' : 'block'};
     `;
 
     const handleNextPage = () => {
         if (pages === 780) {
+            setPages(pages + 7);
+        } else if (pages === 787) {
             return;
         } else {
-            console.log(pages);
             setPages(pages + 20);
         }
     };
@@ -30,8 +31,9 @@ function PokeList(props: any): any {
     const handlePrevPage = () => {
         if (pages === 0) {
             return;
+        } else if (pages === 780) {
+            setPages(pages - 7);
         } else {
-            console.log(pages);
             setPages(pages - 20);
         }
     };
@@ -68,11 +70,11 @@ function PokeList(props: any): any {
             <BtnWrapper>
                 <PrevButton onClick={handlePrevPage}>Anterior</PrevButton>
                 <p>
-                    Página atual: {pages / 20}/{780 / 20} <br />
+                    Página atual: {Math.ceil(pages / 20)}/{800 / 20} <br />
                     Go to:{' '}
                     <input
                         onChange={setNewPage}
-                        value={pages / 20}
+                        value={Math.ceil(pages / 20)}
                         type="number"
                         max={39}
                         min={0}

@@ -16,11 +16,21 @@ export default function PokeFrame(props: any): any {
         });
     }, []);
 
+    const parseID = () => {
+        if (pokemon.id < 10) {
+            return `00${pokemon.id}`;
+        } else if (pokemon.id >= 10 && pokemon.id < 100) {
+            return `0${pokemon.id}`;
+        } else if (pokemon.id > 99) {
+            return pokemon.id;
+        }
+    };
+
     const listenLoading: any = () => {
         if (loading === true) {
             return Loadinggif;
         } else {
-            return pokemonSprites.front_default;
+            return `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${parseID()}.png`;
         }
     };
 

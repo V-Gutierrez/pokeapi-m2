@@ -4,7 +4,7 @@ import Card from './../PokeFrame/PokeFrame_styles';
 export const Container = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     overflow-x: scroll;
     margin-bottom: 25px;
     ::-webkit-scrollbar {
