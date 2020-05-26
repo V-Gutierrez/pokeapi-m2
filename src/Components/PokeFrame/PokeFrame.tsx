@@ -42,7 +42,7 @@ export default function PokeFrame(props: any): any {
                     <p>Altura: {pokemon.height}</p>
                     <p>Peso: {pokemon.weight}</p>
                 </div>
-                <img src={listenLoading()} alt="pokemon sprite" />
+                <img src={listenLoading()} alt={pokemonSprites.back_default} />
             </Card>
         </>
     );
