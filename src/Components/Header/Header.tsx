@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <>
             <Container>
-                <h1>Minha PokeDex</h1>
+                <h1>Minha PokéDex</h1>
                 <span>
                     Powered by:
                     <img
