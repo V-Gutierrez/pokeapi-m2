@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../Services/api';
-import Card from '../PokeFrame/PokeFrame_styles';
 import PokeFrame from '../PokeFrame/PokeFrame';
 import {
     Container,
@@ -37,6 +36,7 @@ const PokeSearch = (props: any) => {
                     <input
                         value={search}
                         onChange={handleSearch}
+                        onInput={handleSearch}
                         placeholder="Busque o nome de um Pokémon aqui."
                         type="text"
                         autoComplete="false"
@@ -57,7 +57,7 @@ const PokeSearch = (props: any) => {
                                 );
                             }
                         } else {
-                            return '';
+                            return;
                         }
                     })}
                 </Container>

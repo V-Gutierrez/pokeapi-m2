@@ -61,3 +61,22 @@ export const DesktopText = styled.p`
 export const Wrapper = styled.div`
     width: 100%;
 `;
+
+export const Search = styled.button`
+    color: white;
+    background-color: #ef5350;
+    border: 1px solid yellow;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height: 32px;
+    font-size: 14px;
+    margin-bottom: 50px;
+    background-position: center;
+    transition: background 0.8s;
+
+    &:active {
+        box-shadow: 0 3px 0 yellow;
+        top: 3px;
+    }
+`;
