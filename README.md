@@ -9,11 +9,10 @@ Ferramentas utilizadas até o momento:
 - PokéAPI
 - Styled-Components
 
+![pokedexgif2](https://user-images.githubusercontent.com/62355596/82861680-796e5b00-9eeb-11ea-96dc-c950a0e90b82.gif)
+
 
 Primeiro deploy: http://pokedex-vgutierrez.surge.sh/
-
-
-
 
 Futuras implementações: 
 
