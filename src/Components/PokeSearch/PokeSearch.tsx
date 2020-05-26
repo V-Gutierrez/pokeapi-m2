@@ -11,7 +11,7 @@ import {
 
 const PokeSearch = (props: any) => {
     const [everyPokemon, setAll] = useState<any>([]);
-    const [search, setSearch] = useState<string>('a');
+    const [search, setSearch] = useState<string>('');
 
     useEffect(() => {
         api.get<any>(`pokemon?offset=787&limit=0`).then((response) => {
