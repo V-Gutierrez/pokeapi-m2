@@ -45,7 +45,13 @@ function PokeList(props: any): any {
     }, [pages]);
 
     const setNewPage = (e: any) => {
-        setPages(e.target.value * 20);
+        if (e.target.value > 39) {
+            setPages(39 * 20);
+        } else if (e.target.value < 0) {
+            setPages(0);
+        } else {
+            setPages(e.target.value * 20);
+        }
     };
 
     return (

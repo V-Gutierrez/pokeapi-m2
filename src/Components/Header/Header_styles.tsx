@@ -19,6 +19,18 @@ const Container = styled.div`
         align-items: center;
         justify-content: space-evenly;
     }
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        height: 30vh;
+        width: 100vw;
+
+        span {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    }
 `;
 
 export default Container;

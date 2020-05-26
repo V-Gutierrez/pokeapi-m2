@@ -7,7 +7,6 @@ export default function PokeFrame(props: any): any {
     const [pokemon, getPokemon] = useState<any>([]);
     const [pokemonSprites, getSprite] = useState<any>([]);
     const [loading, setLoad] = useState<boolean>(true);
-    const [pokemonColor, setColor] = useState<any>([]);
 
     useEffect(() => {
         api.get<any>(`${props.pokemonUrl}`).then((response) => {
@@ -15,7 +14,7 @@ export default function PokeFrame(props: any): any {
             getSprite(response.data.sprites);
             setLoad(false);
         });
-    }, []);
+    }, [pokemonSprites]);
 
     const listenLoading: any = () => {
         if (loading === true) {

@@ -12,6 +12,13 @@ const Card = styled.div`
     width: 400px;
     height: 200px;
 
+img{
+    max-width: 50%;
+
+}
+
+@media screen and (max-width: 800px){
+    width: 350px
 `;
 
 export default Card;

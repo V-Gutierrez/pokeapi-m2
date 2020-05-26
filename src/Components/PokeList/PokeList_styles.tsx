@@ -6,10 +6,16 @@ export const List = styled.div`
     grid-template-columns: repeat(auto-fill, 400px);
     text-align: center;
     justify-content: space-evenly;
-
     gap: 20px;
     padding: 10px;
     height: auto;
+    @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 10px;
+        column-gap: 0px;
+        width: 100vw;
+    }
 `;
 
 export const BtnWrapper = styled.div`
@@ -20,9 +26,9 @@ export const BtnWrapper = styled.div`
     height: 10vh;
 
     button {
-        color: #1d9af2;
-        background-color: #292d3e;
-        border: 1px solid #1d9af2;
+        color: white;
+        background-color: #ef5350;
+        border: 1px solid yellow;
         border-radius: 4px;
         padding: 0 15px;
         cursor: pointer;
@@ -32,7 +38,7 @@ export const BtnWrapper = styled.div`
         transition: background 0.8s;
     }
     button:active {
-        box-shadow: 0 3px 0 #00823f;
+        box-shadow: 0 3px 0 yellow;
         top: 3px;
     }
 
