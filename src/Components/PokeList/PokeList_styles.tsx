@@ -24,6 +24,10 @@ export const BtnWrapper = styled.div`
     justify-content: space-evenly;
     align-items: center;
     height: 10vh;
+    position: sticky;
+    bottom: 0;
+    background-color: #ef5350;
+    border-top: 1px solid yellow;
 
     button {
         color: white;

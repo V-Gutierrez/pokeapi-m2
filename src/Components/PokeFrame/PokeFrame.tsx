@@ -14,7 +14,7 @@ export default function PokeFrame(props: any): any {
             getSprite(response.data.sprites);
             setLoad(false);
         });
-    }, [pokemonSprites]);
+    }, []);
 
     const listenLoading: any = () => {
         if (loading === true) {
