@@ -19,7 +19,6 @@ export default function Pokemon({
             setData(response.data);
             setLoad(false);
         });
-        document.title = `${pokeName}`;
     }, []);
 
     const Capitalize = (str: string) => {
