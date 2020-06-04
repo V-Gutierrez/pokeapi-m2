@@ -23,6 +23,8 @@ const PokeSearch = (props: any) => {
         setSearch(`${e.target.value}`);
     };
 
+    const smartSearch = new RegExp(search, 'gi');
+
     return (
         <>
             <Wrapper>
@@ -45,7 +47,7 @@ const PokeSearch = (props: any) => {
 
                 <Container>
                     {everyPokemon.map((i: any) => {
-                        if (i.name.includes(search)) {
+                        if (i.name.match(smartSearch)) {
                             if (search !== '') {
                                 return (
                                     <>

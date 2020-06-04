@@ -7,9 +7,11 @@ export default function PokeFrame(props: any): any {
     const [pokemon, getPokemon] = useState<any>([]);
     const [pokemonSprites, getSprite] = useState<any>([]);
     const [loading, setLoad] = useState<boolean>(true);
+    const [pokeName, setName] = useState<string>('');
 
     useEffect(() => {
         api.get<any>(`${props.pokemonUrl}`).then((response) => {
+            setName(Capitalize(response.data.name));
             getPokemon(response.data);
             getSprite(response.data.sprites);
             setLoad(false);
@@ -34,13 +36,15 @@ export default function PokeFrame(props: any): any {
         }
     };
 
+    const Capitalize = (str: string) => {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+    };
+
     return (
         <>
             <Card>
                 <div>
-                    <h3>{pokemon.name}</h3>
-                    <p>Altura: {pokemon.height}</p>
-                    <p>Peso: {pokemon.weight}</p>
+                    <h3>{pokeName}</h3>
                 </div>
                 <img src={listenLoading()} alt={pokemonSprites.back_default} />
             </Card>

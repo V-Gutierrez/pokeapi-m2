@@ -14,10 +14,7 @@ function App() {
             <Wrapper>
                 <PokeList />
                 <Text>
-                    Made by:{' '}
-                    <a href="https://github.com/V-Gutierrez">
-                        Victor Gutierrez
-                    </a>
+                   
                 </Text>
             </Wrapper>
         </>
