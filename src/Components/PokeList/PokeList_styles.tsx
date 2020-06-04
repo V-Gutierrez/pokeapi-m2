@@ -64,10 +64,10 @@ export const BtnWrapper = styled.div`
 export const Text = styled.p`
     color: white;
     font-weight: bold;
+`;
 
-    a {
-        color: yellow;
-        text-decoration: none;
-        font-weight: bold;
-    }
+export const Ylink = styled.a`
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
 `;

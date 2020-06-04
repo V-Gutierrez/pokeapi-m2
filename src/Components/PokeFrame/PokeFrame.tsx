@@ -42,18 +42,15 @@ export default function PokeFrame(props: any): any {
     };
 
     return (
-        <Link to={`/pokemon/${pokemon.id}`}>
-            <Card>
-                <div>
-                    <h3>{pokeName}</h3>
-                </div>
-                <WhiteBackground>
-                    <img
-                        src={listenLoading()}
-                        alt={pokemonSprites.back_default}
-                    />
-                </WhiteBackground>
-            </Card>
-        </Link>
+        <Card>
+            <div>
+                <Link to={`/pokemon/${pokemon.id}`}>
+                    <h3 style={{ color: 'black' }}>{pokeName}</h3>
+                </Link>
+            </div>
+            <WhiteBackground>
+                <img src={listenLoading()} alt={pokemonSprites.back_default} />
+            </WhiteBackground>
+        </Card>
     );
 }
