@@ -60,3 +60,14 @@ export const BtnWrapper = styled.div`
         padding: 3px;
     }
 `;
+
+export const Text = styled.p`
+    color: white;
+    font-weight: bold;
+
+    a {
+        color: yellow;
+        text-decoration: none;
+        font-weight: bold;
+    }
+`;

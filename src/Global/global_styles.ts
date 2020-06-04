@@ -12,6 +12,15 @@ const GlobalStyle = createGlobalStyle`
 
   }
 
+
+
+  a:visited, a{
+      text-decoration: none;
+      color: black;
+
+
+  }
+
   body {
       -webkit-font-smoothing: antialiased;
       background-color: #ef5350;

@@ -1,22 +1,24 @@
 import React from 'react';
+import Homepage from './Pages/Homepage/Homepage';
 import GlobalStyle from './Global/global_styles';
-import PokeList from './Components/PokeList/PokeList';
-import Header from './Components/Header/Header';
-import { Wrapper, Text } from './Components/Wrapper/Wrapper_styles';
-import PokeSearch from './Components/PokeSearch/PokeSearch';
+import Pokemon from './Pages/Pokemon/pokemon';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
     return (
         <>
             <GlobalStyle />
-            <Header />
-            <PokeSearch />
-            <Wrapper>
-                <PokeList />
-                <Text>
-                   
-                </Text>
-            </Wrapper>
+            <Router>
+                <Switch>
+                    <Route exact path="/">
+                        <Homepage />
+                    </Route>
+                    <Route
+                        path="/pokemon/:id"
+                        render={(props) => <Pokemon {...props} />}
+                    ></Route>
+                </Switch>
+            </Router>
         </>
     );
 }

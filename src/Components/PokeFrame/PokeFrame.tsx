@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import api from './../../Services/api';
 import Loadinggif from '../../Assets/200.gif';
-import Card from './PokeFrame_styles';
+import { Card, WhiteBackground } from './PokeFrame_styles';
+import { Link } from 'react-router-dom';
 
 export default function PokeFrame(props: any): any {
     const [pokemon, getPokemon] = useState<any>([]);
@@ -41,13 +42,18 @@ export default function PokeFrame(props: any): any {
     };
 
     return (
-        <>
+        <Link to={`/pokemon/${pokemon.id}`}>
             <Card>
                 <div>
                     <h3>{pokeName}</h3>
                 </div>
-                <img src={listenLoading()} alt={pokemonSprites.back_default} />
+                <WhiteBackground>
+                    <img
+                        src={listenLoading()}
+                        alt={pokemonSprites.back_default}
+                    />
+                </WhiteBackground>
             </Card>
-        </>
+        </Link>
     );
 }

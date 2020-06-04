@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import api from '../../Services/api';
 import styled from 'styled-components';
 import PokeFrame from './../PokeFrame/PokeFrame';
-import { List, BtnWrapper } from './PokeList_styles';
+import { List, BtnWrapper, Text } from './PokeList_styles';
 
 function PokeList(props: any): any {
     const [pokemonList, setPokemonList] = useState<any>([]);
@@ -82,6 +82,10 @@ function PokeList(props: any): any {
                 </p>
                 <NextButton onClick={handleNextPage}>Próxima</NextButton>
             </BtnWrapper>
+            <Text>
+                Made by:{' '}
+                <a href="https://github.com/V-Gutierrez">Victor Gutierrez</a>
+            </Text>
         </>
     );
 }
