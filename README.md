@@ -27,5 +27,4 @@ Primeiro deploy: http://pokedex-vgutierrez.surge.sh/
 Futuras implementações: 
 
 - Página de cada Pokémon
-- Melhoras na UI 
 - Aplicativo Mobile
