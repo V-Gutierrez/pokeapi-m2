@@ -1,30 +1,45 @@
-### pokeapi-m2
+A simple Pokédex mockup
+</h1>
 
-- Projeto em andamento, nesta fase inicial já consigo utilizar os dados da API e realizar a paginação.
+<p align="center">An app to learn more about using TypeScript and APIs</p>
 
-### v3
-- Cada Pokémon possui uma pequena página individual
+<p align="center">
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License MIT">
+    </a>
+    <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License MIT">
+    </a>
+    <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License MIT">
+    </a>
+    <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License MIT">
+    </a>
 
+</p>
 
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/62355596/82861680-796e5b00-9eeb-11ea-96dc-c950a0e90b82.gif" alt="License MIT">
+    <img src="https://user-images.githubusercontent.com/62355596/82861903-1df09d00-9eec-11ea-8c98-b008bdb15a07.gif" alt="License MIT">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License MIT">
+</p>
 
-Ferramentas utilizadas até o momento:
+<hr />
 
-- TypeScript
-- Axios
-- PokéAPI
-- Styled-Components
-- React-Router-DOM
+## Features
 
-![pokedexgif2](https://user-images.githubusercontent.com/62355596/82861680-796e5b00-9eeb-11ea-96dc-c950a0e90b82.gif)
-![pokedexgif23](https://user-images.githubusercontent.com/62355596/82861903-1df09d00-9eec-11ea-8c98-b008bdb15a07.gif)
-![image](https://user-images.githubusercontent.com/62355596/83975861-1ce44600-a8c4-11ea-837f-c5419122f29d.png)
-![image](https://user-images.githubusercontent.com/62355596/83975880-3eddc880-a8c4-11ea-83f1-04eb2c85abbc.png)
-![image](https://user-images.githubusercontent.com/62355596/83975890-4ef5a800-a8c4-11ea-8552-7134119a736c.png)
+-   ⚛ - **React** — A library to build user interfaces
+-   🖋 - **TypeScript** - JavaScript that scales
+-   💅 - **CSS** — styled-components
+-   💖 - **Lint** — ESlint/Prettier/Editor Config
+-   🗺 - **React-Routes** — Routes in React made easy
+-   🕹 - **PokéAPI** - To retrieve Pokémon data
+-   🛠 - **Axios** - A promise based HTTP client
 
+## Deploy
 
-Primeiro deploy: http://pokedex-vgutierrez.surge.sh/
-
-Futuras implementações: 
-
-- Página de cada Pokémon
-- Aplicativo Mobile
+-   http://pokedex-vgutierrez.surge.sh/
