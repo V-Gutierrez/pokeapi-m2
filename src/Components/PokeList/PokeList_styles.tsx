@@ -9,6 +9,8 @@ export const List = styled.div`
     gap: 20px;
     padding: 10px;
     height: auto;
+    min-height: 1000px;
+
     @media screen and (max-width: 800px) {
         grid-template-columns: 1fr;
         justify-items: center;
@@ -64,6 +66,9 @@ export const BtnWrapper = styled.div`
 export const Text = styled.p`
     color: white;
     font-weight: bold;
+    background-color: #ef5350;
+    width: 100%;
+    text-align: center;
 `;
 
 export const Ylink = styled.a`
