@@ -10,22 +10,13 @@ A simple Pokédex mockup
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License MIT">
     </a>
-    <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License MIT">
-    </a>
-    <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License MIT">
-    </a>
-    <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License MIT">
-    </a>
-
+    
 </p>
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/62355596/82861680-796e5b00-9eeb-11ea-96dc-c950a0e90b82.gif" alt="License MIT">
-    <img src="https://user-images.githubusercontent.com/62355596/82861903-1df09d00-9eec-11ea-8c98-b008bdb15a07.gif" alt="License MIT">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License MIT">
+    <img src="https://user-images.githubusercontent.com/62355596/82861680-796e5b00-9eeb-11ea-96dc-c950a0e90b82.gif" >
+    <img src="https://user-images.githubusercontent.com/62355596/82861903-1df09d00-9eec-11ea-8c98-b008bdb15a07.gif" >
+    
 </p>
 
 <hr />
