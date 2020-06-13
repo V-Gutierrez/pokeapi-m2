@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Card from './../PokeFrame/PokeFrame_styles';
+import PokeFrame from './../PokeFrame/PokeFrame_styles';
 
 export const Container = styled.div`
     display: flex;
@@ -13,10 +13,13 @@ export const Container = styled.div`
 
     * {
         margin: 0 50px;
+
+
     }
 
-    ${Card} {
-        background-color: yellow;
+> * {
+    background: yellow;
+}
 
         img {
             position: relative;
