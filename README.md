@@ -1,4 +1,9 @@
-A simple Pokédex mockup
+<h1 align="center">
+<br>
+
+<br>
+<br>
+ A simple Pokedéx
 </h1>
 
 <p align="center">An app to learn more about using TypeScript and APIs</p>
