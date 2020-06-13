@@ -3,7 +3,7 @@
 
 <br>
 <br>
- A simple Pokedéx
+ A simple Pokédex
 </h1>
 
 <p align="center">An app to learn more about using TypeScript and APIs</p>
